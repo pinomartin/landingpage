@@ -14,14 +14,54 @@ nav {
     position: fixed;
     top: 20px;
     left: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 nav a {
-    color: #ffffff;
     text-decoration: none;
-    display: inline-block;
+    color: #ffffff;
+}
+
+.icono {
+    display: block;
     /*Aplico animacion Keyframe*/
     animation: moverIzquierda 1s ease-in;
+    /*Para que quede por encima Menu*/
+    z-index: 100;
+}
+
+
+/*Botonera navegador con circulo*/
+
+.enlaces {
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.uno {
+    /*desde la pagina clip-path */
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+
+.dos {
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
 }
 
 header {
@@ -102,6 +142,9 @@ img {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+/*ICONOS FOOTER*/
+
 .iconos {
     display: flex;
     justify-content: flex-end;
@@ -156,5 +199,69 @@ img {
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    img {
+        height: 370px;
+    }
+    .textos h1 {
+        font-size: 70px;
+    }
+    .textos h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        height: 250px;
+    }
+    .textos h1 {
+        font-size: 40px;
+    }
+    .textos h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .textos {
+        width: 100%;
+        text-align: center;
+    }
+    .textos h1 {
+        font-size: 50px;
+    }
+    .textos h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    img {
+        margin-top: 20px;
+        height: 160px;
+    }
+    .textos h1 {
+        font-size: 35px;
+    }
+    .textos a {
+        width: 100px;
+    }
+    .textos h2 {
+        font-size: 15px;
     }
 }

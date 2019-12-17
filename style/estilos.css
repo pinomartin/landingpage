@@ -159,12 +159,21 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center;
-    grid-gap: 40px;
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
 }
 
 .skill {
     text-align: center;
     color: #ffffff;
+}
+
+.skill.s-uno {
+    animation: showUp 2.5s ease-in-out;
+}
+
+.skill.s-dos {
+    animation: showUp 3.5s ease-in-out;
 }
 
 .skill h2 {
@@ -246,6 +255,18 @@ img {
         transform: translate(0);
     }
 }
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*MEDIA QUERIES*/
 
 @media screen and (max-width: 1000px) {
     img {

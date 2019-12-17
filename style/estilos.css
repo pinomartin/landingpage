@@ -145,8 +145,8 @@ img {
 
 /*CONTENIDO SKILLS*/
 
-.habilidades {
-    margin: 40px 0;
+.contenedor-main {
+    margin: 70px 0;
 }
 
 .habilidades h1 {
@@ -159,7 +159,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center;
-    grid-row-gap: 40px;
+    grid-gap: 40px;
 }
 
 .skill {

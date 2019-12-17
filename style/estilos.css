@@ -143,11 +143,56 @@ img {
 }
 
 
+/*CONTENIDO SKILLS*/
+
+.habilidades {
+    margin: 40px 0;
+}
+
+.habilidades h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contenedor-hablidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    grid-row-gap: 40px;
+}
+
+.skill {
+    text-align: center;
+    color: #ffffff;
+}
+
+.skill h2 {
+    margin-bottom: 20px;
+}
+
+.icon-habilidades {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+
+/******FOOTER*****/
+
+.footer h3 {
+    color: #ffffff;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: 100;
+}
+
+
 /*ICONOS FOOTER*/
 
 .iconos {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     text-align: center;
     animation: moverDerecha 1s ease-in;
 }

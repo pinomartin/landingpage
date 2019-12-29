@@ -172,6 +172,11 @@ img {
     animation: showUp 3s ease-in-out;
 }
 
+.skill.s-uno p {
+    font-family: 'Indie Flower', cursive;
+    ;
+}
+
 .skill.s-dos {
     animation: showUp 4s ease-in-out;
 }
@@ -192,6 +197,11 @@ img {
 .icon-habilidades {
     color: #ffffff;
     font-size: 50px;
+    transition: color .2s ease-in-out;
+}
+
+.icon-habilidades i:hover {
+    color: #000000;
 }
 
 
@@ -212,11 +222,18 @@ img {
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
+    /*wrap - para que se coloque uno bajo el otro*/
+    flex-wrap: wrap;
+}
+
+.experience :first-child {
+    margin-top: 25px;
 }
 
 .experience {
     text-align: center;
     color: #ffffff;
+    margin-bottom: 25px;
 }
 
 
@@ -260,6 +277,11 @@ img {
     padding: 5px;
     color: #ffffff;
     font-size: 35px;
+    transition: color .2s ease-in-out;
+}
+
+.iconos a:hover {
+    color: #302b63;
 }
 
 .iconos a:last-child {

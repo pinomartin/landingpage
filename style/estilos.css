@@ -120,12 +120,17 @@ img {
     border: 1px solid #ffffff;
     text-align: center;
     animation: moverArriba 1s ease-in;
+    transition: background-color 1.3s ease-in-out;
 }
 
 .boton a {
     text-decoration: none;
     color: #ffffff;
     text-transform: capitalize;
+}
+
+.boton:hover {
+    background-color: #3494cc;
 }
 
 
@@ -173,8 +178,9 @@ img {
 }
 
 .skill.s-uno p {
-    font-family: 'Indie Flower', cursive;
-    ;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
 }
 
 .skill.s-dos {
@@ -200,8 +206,31 @@ img {
     transition: color .2s ease-in-out;
 }
 
-.icon-habilidades i:hover {
-    color: #000000;
+
+/*Colores iconos*/
+
+#html5:hover {
+    color: #f59b25;
+}
+
+#css3:hover {
+    color: #256ef5;
+}
+
+#js:hover {
+    color: #f2f525;
+}
+
+#csharp:hover {
+    color: #a225f5;
+}
+
+#git:hover {
+    color: #f59b25;
+}
+
+#sql:hover {
+    color: #686f7c;
 }
 
 

@@ -195,6 +195,31 @@ img {
 }
 
 
+/*SECTION EXPERIENCE*/
+
+.section-experience {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-experience h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contenedor-experience {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.experience {
+    text-align: center;
+    color: #ffffff;
+}
+
+
 /******FOOTER*****/
 
 .footer {
@@ -355,3 +380,5 @@ img {
         font-size: 15px;
     }
 }
+
+ty

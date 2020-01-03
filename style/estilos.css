@@ -120,7 +120,7 @@ img {
     border: 1px solid #ffffff;
     text-align: center;
     animation: moverArriba 1s ease-in;
-    transition: background-color 1.3s ease-in-out;
+    transition: background-color 1s ease-in-out;
 }
 
 .boton a {
@@ -203,7 +203,11 @@ img {
 .icon-habilidades {
     color: #ffffff;
     font-size: 50px;
+}
+
+.icon-habilidades i {
     transition: color .2s ease-in-out;
+    transform: scale(1) .2s ease;
 }
 
 
@@ -218,7 +222,7 @@ img {
 }
 
 #js:hover {
-    color: #f2f525;
+    color: #dde001;
 }
 
 #csharp:hover {
@@ -244,7 +248,9 @@ img {
 .section-experience h1 {
     color: #ffffff;
     text-align: center;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2em;
 }
 
 .contenedor-experience {
@@ -256,13 +262,32 @@ img {
 }
 
 .experience :first-child {
-    margin-top: 25px;
+    margin-top: 2px;
 }
 
 .experience {
     text-align: center;
     color: #ffffff;
     margin-bottom: 25px;
+}
+
+.lista-tareas {
+    margin-top: 8px;
+}
+
+.lista-tareas a {
+    text-decoration: none;
+    font-size: 1em;
+    color: blueviolet;
+    transition: color 1s ease-in-out;
+}
+
+.lista-tareas a:hover {
+    color: #06c5ff;
+}
+
+.lista-tareas li {
+    text-align: center;
 }
 
 

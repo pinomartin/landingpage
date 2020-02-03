@@ -14,3 +14,4 @@ boton.addEventListener("click", function(e) {
         contador = 0;
     }
 });
+

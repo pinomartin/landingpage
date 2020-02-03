@@ -168,6 +168,12 @@ img {
     grid-row-gap: 60px;
 }
 
+@media (min-width: 990px){
+    .contenedor-hablidades {
+        grid-template-columns:  repeat(auto-fit, minmax(450px, 1fr));
+    }
+}
+
 .skill {
     text-align: center;
     color: #ffffff;
@@ -230,7 +236,7 @@ img {
 }
 
 #git:hover {
-    color: #f59b25;
+    color: #58ca58;
 }
 
 #sql:hover {
@@ -331,7 +337,7 @@ img {
     padding: 5px;
     color: #ffffff;
     font-size: 35px;
-    transition: color .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .iconos a:hover {
@@ -339,7 +345,31 @@ img {
 }
 
 .iconos a:last-child {
-    margin-right: 0;
+    margin-right: 5px;
+}
+
+
+#linkedin:hover{
+    color: #3494cc;
+    transform: scale(1.2);
+}#github:hover{
+    color: #adadad;
+    transform: scale(1.2);
+}
+#cv:hover{
+    color: #f0b66b;
+    transform: scale(1.2);
+}
+#whatsapp:hover{
+    color: #86f398;
+    transform: scale(1.2);
+}
+
+/*div espacio footer*/
+
+.espacio{
+    height: 30px;
+    margin-top: 10px;
 }
 
 

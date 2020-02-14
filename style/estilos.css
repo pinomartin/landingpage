@@ -183,9 +183,9 @@ img {
     animation: showUp 3s ease-in-out;
 }
 
-.skill.s-uno p {
+.skill.s-uno p, .skill.s-dos p {
     font-family: 'Abel', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 100;
 }
 

@@ -15,3 +15,17 @@ boton.addEventListener("click", function(e) {
     }
 });
 
+$(document).ready(function(){
+    'use strict';
+    $("#boton-contacto").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#iconos-contacto").offset().top
+                    }, 2000);
+            }
+    );
+});
+
+
+
+
+

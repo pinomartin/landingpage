@@ -121,9 +121,8 @@ img {
     text-align: center;
     animation: moverArriba 1s ease-in;
     transition: background-color 1s ease-in-out;
-}
-
-.boton a {
+    -moz-transition: background-color 1s ease-in-out;
+    -webkit-transition: background-color 1s ease-in-out;
     text-decoration: none;
     color: #ffffff;
     text-transform: capitalize;
@@ -338,10 +337,6 @@ img {
     color: #ffffff;
     font-size: 35px;
     transition: all .2s ease-in-out;
-}
-
-.iconos a:hover {
-    color: #302b63;
 }
 
 .iconos a:last-child {

@@ -112,31 +112,33 @@ img {
 }
 
 .boton {
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 14px 25px;
-    border-radius: 10px;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    background-color: #3494cc;
     display: inline-block;
-    border: 1px solid #ffffff;
+    border: none;
+    border-radius: 10px;
     text-align: center;
     color: #ffffff;
-    background-color: transparent;
     animation: moverArriba 1s ease-in;
-    transition: background-color 1s ease-in-out;
-    -moz-transition: background-color 1s ease-in-out;
-    -webkit-transition: background-color 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
     text-decoration: none;
     display: inline-block;
     color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: lighter;
+    font-weight: 700;
 }
 
 .boton:hover {
-    background-color: #3494cc;
+   
+    border-radius: 20px;
+    border: none;
+    transform: scale(1.1);
     
 }
 
@@ -190,10 +192,10 @@ img {
     animation: showUp 3s ease-in-out;
 }
 
-.skill.s-uno p, .skill.s-dos p {
-    font-family: 'Abel', sans-serif;
-    font-size: 20px;
-    font-weight: 100;
+.skill.s-uno ul, .skill.s-dos ul {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 150;
 }
 
 .skill.s-dos {
@@ -262,7 +264,7 @@ img {
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 2em;
 }
 
@@ -281,7 +283,12 @@ img {
 .experience {
     text-align: center;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.experience h2{
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 .lista-tareas {
@@ -291,17 +298,21 @@ img {
 .lista-tareas a {
     text-decoration: none;
     font-size: 1em;
-    color: blueviolet;
-    transition: color 1s ease-in-out;
+    color: #06c5ff;
+    transition: all 0.5s ease-in-out;
 }
 
 .lista-tareas a:hover {
-    color: #06c5ff;
+    color: blueviolet;
+    font-size: 1.1em;
 }
 
-.lista-tareas li {
+.lista-tareas ul,li {
     text-align: center;
+    list-style: none;
+    line-height: 1.5rem;
 }
+
 
 
 /******FOOTER*****/

@@ -1,176 +1,181 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
+    <title>Pino Martin - Portfolio</title>
     <link rel="stylesheet" href="/style/estilos.css">
     <link rel="stylesheet" href="/style/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/ico" href="img/icon_web.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="img/icon_web.ico" />
 </head>
 
 <body>
-    <header>
+    <header">
         <nav>
             <a href="#" id="icono" class="icono">MENU</a>
             <!--Opciones Menu-->
             <div class="enlaces uno" id="enlaces">
-                <a href="#">Inicio</a>
-                <a href="#">Acerca de</a>
-                <a href="#">Contacto</a>
+                <a id="skill" href="#divskills">Skills</a>
+                <a id="xp" href="#divexp">Experience</a>
+                <a id="contacto" href="#iconos">Contacto</a>
             </div>
 
         </nav>
         <div class="contenedor">
             <div class="textos">
                 <h1>Martin Pino</h1>
-                <h2>Jr. FullStack Developer</h2>
-                <a class= "boton" href="#iconos-contacto" id="boton-contacto">Contact Me</a>
+                <h2>Jr. Developer</h2>
+                <h4>Personal Portolio</h4>
+                <a class="boton" href="#iconos-contacto" id="boton-contacto">Contact Me</a>
             </div>
             <img src="img/vec-bet-min.png" alt="">
         </div>
-    </header>
 
-    <div class="wave">
-        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #000000;"></path></svg></div>
-    </div>
+        <div class="home">
+            <a id="btn-home" class="boton btn-home" href="#divskills-h1">Ir</a>
+        </div>
+        </header>
 
-    <!--MY SKILLS SECTION-->
-    <div class="contenedor-main">
-        <main class="habilidades">
-            <h1>My Skills</h1>
-            <div class="contenedor-hablidades">
-                <div class="skill s-uno">
-                    <h2>HTML5</h2>
-                    <div class="icon-habilidades">
-                        <i class="fab fa-html5" id="html5"></i>
-                    </div>
-                    <ul>
-                        <li>Modern Web Pages</li>
-                        <li>Design Structure</li>
-                        <li>Semantic HTML</li>
-                        <li>Elements & Tags</li>
-                    </ul>
-                </div>
-                <div class="skill s-uno">
-                    <h2>CSS3</h2>
-                    <div class="icon-habilidades">
-                        <i class="fab fa-css3-alt" id="css3"></i>
-                    </div>
-                    <ul>
-                        <li>CSS Grid</li>
-                        <li>FlexBox</li>
-                        <li>Responsive Web Design</li>
-                    </ul>
-                </div>
-                <div class="skill s-uno">
-                    <h2>JavaScript</h2>
-                    <div class="icon-habilidades">
-                        <i class="fab fa-js-square" id="js"></i>
-                    </div>
-                    <ul>
-                        <li>Basic to Advanced Knowledge</li>
-                        <li>ES6 features</li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="skill s-dos">
-                    <h2>C#</h2>
-                    <div class="icon-habilidades">
-                        <i class="fas fa-code" id="csharp"></i>
-                    </div>
-                    <ul>
-                        <li>WinForms Apps</li>
-                        <li>CRUD/ABM</li>
-                        <li>ADO.NET</li>
-                    </ul>
-                </div>
-                <div class="skill s-dos">
-                    <h2>Git</h2>
-                    <div class="icon-habilidades">
-                        <i class="fab fa-git-alt" id="git"></i>
-                    </div>
-                    <ul>
-                        <li>Control Version Features</li>
-                    </ul>
-                </div>
-                <div class="skill s-dos">
-                    <h2>SQL Server</h2>
-                    <div class="icon-habilidades">
-                        <i class="fas fa-database" id="sql"></i>
-                    </div>
-                    <ul>
-                        <li>DB Normalization </li>
-                        <li>DDL & DML</li>
-                        <li>DB Management</li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-    </div>
-    <div class="hero-inter">
+        <!-- <div class="wave">
+            <div><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #242547;"></path>
+                </svg></div>
+        </div>
         <div class="wave">
-            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-26.80,1.48 C244.75,132.72 180.86,-41.94 511.65,51.80 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #000000;"></path></svg></div>
-        </div>
-    </div>
-    <div class="contenedor-section">
-        <article class="section-experience">
-            <h1>My Experience</h1>
-            <div class="contenedor-experience">
-                <div class="experience">
-                    <h2>Web Developer Junior</h2>
-                    <h3>Freelance</h3>
-                    <p>03-2019 - Today</p>
-                    <div class="lista-tareas">
-                        <ul>
-                        <li>Estudio Moreno y Asociados <a href="http://morenoyasociados.com.ar/" target="_blank">Website</a></li>
-                        <li>Portfolio Fotografia Rocio Juarez <a href="https://rociojua.netlify.com/" target="_blank">Website</a></li>
-                        <li>Freelance Developer <a href=https://freelanceweb.netlify.com/ target="_blank">Website</a></li>
-                        <li>FrontEnd Store <a href=https://frontstore.netlify.com target="_blank">Website</a></li>
-                        <li>My Piano Web <a href=https://pianoweb.netlify.com target="_blank">Website</a></li>
-                        <li>Drums Keyboard Web <a href=https://keydrumsweb.netlify.com/ target="_blank">Website</a></li>
-                        </ul>
+            <div style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                        style="stroke: none; fill: #242547;"></path>
+                </svg></div>
+
+        </div> -->
+
+        <!--MY SKILLS SECTION-->
+        <div class="contenedor-main">
+            <main id="divskills" class="habilidades">
+                <h1 id="divskills-h1">My Skills</h1>
+                <div class="contenedor-hablidades">
+                    <div class="skill s-uno">
+                        <h2 id="html5-h2">HTML5</h2>
+                        <div class="icon-habilidades">
+                            <i class="fab fa-html5" id="html5"></i>
+                        </div>
+                    </div>
+                    <div class="skill s-uno">
+                        <h2>CSS3</h2>
+                        <div class="icon-habilidades">
+                            <i class="fab fa-css3-alt" id="css3"></i>
+                        </div>
+                    </div>
+                    <div class="skill s-uno">
+                        <h2>JavaScript</h2>
+                        <div class="icon-habilidades">
+                            <i class="fab fa-js-square" id="js"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="experience">
-                    <h2>Administrative Accounting Senior</h2>
-                    <h3>Estudio Moreno y Asociados</h3>
-                    <p>02-2015 - Today</p>
-                    <div class="lista-tareas">
-                        <ul>
-                            <li>Accountability Indexs <a href="https://github.com/pinomartin/indicesEECCapp" target="_blank">App</a></li>
-                            <li>Excel Sheets Development</li>
-                            <li>Settle Taxes</li>
-                            <li>Accountancy</li>
-                            <li>Payroll Services</li>
-                            <li>Administrative Taks</li>
-                        </ul>
+                <div class="contenedor-hablidades">
+                    <div class="skill s-dos">
+                        <h2>C#</h2>
+                        <div class="icon-habilidades">
+                            <i class="fas fa-code" id="csharp"></i>
+                        </div>
                     </div>
-
+                    <div class="skill s-dos">
+                        <h2>Git</h2>
+                        <div class="icon-habilidades">
+                            <i class="fab fa-git-alt" id="git"></i>
+                        </div>
+                    </div>
+                    <div class="skill s-dos">
+                        <h2>SQL Server</h2>
+                        <div class="icon-habilidades">
+                            <i class="fas fa-database" id="sql"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </article>
-    </div>
-    <!--FOOTER SECTION-->
-    <footer class="footer">
-        <h3>Follow me</h3>
-        <div class="iconos" id="iconos-contacto">
-            <a id="linkedin" href="https://www.linkedin.com/in/martinpino91/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a id="github" href="https://github.com/pinomartin" target="_blank"><i class="fab fa-github"></i></a>
-            <a id="cv" href="https://drive.google.com/file/d/1zjAWQwpfijKoT9tbVXRzxxKMCCJ6PzU7/view?usp=sharing" target="_blank"><i class="far fa-file-alt"></i></a>
-            <a id="whatsapp" href="https://api.whatsapp.com/send?phone=543517704193&text=Hola%20Mart%C3%ADn%20!%20Me%20interesa%20saber%20m%C3%A1s%20de%20ti" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </main>
         </div>
-        <div class="espacio">
-            
+        <!-- <div class="hero-inter">
+            <div class="wave">
+                <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                        style="height: 100%; width: 100%;">
+                        <path d="M-26.80,1.48 C244.75,132.72 180.86,-41.94 511.65,51.80 L500.00,0.00 L0.00,0.00 Z"
+                            style="stroke: none; fill: #242547;"></path>
+                    </svg></div>
+            </div>
+        </div> -->
+        <div class="contenedor-section">
+            <article class="section-experience">
+                <h1>My Experience</h1>
+                <div id="divexp" class="contenedor-experience">
+                    <div class="experience">
+                        <h2>Web Developer Junior</h2>
+                        <h3>Freelance</h3>
+                        <p>03-2019 - Today</p>
+                        <div class="lista-tareas">
+                            <ul>
+                                <li>Estudio Moreno y Asociados <a href="http://morenoyasociados.com.ar/"
+                                        target="_blank">Website</a></li>
+                                <li>Portfolio Fotografia Rocio Juarez <a href="https://rociojua.netlify.com/"
+                                        target="_blank">Website</a></li>
+                                <li>Freelance Developer <a href=https://freelanceweb.netlify.com/
+                                        target="_blank">Website</a></li>
+                                <li>FrontEnd Store <a href=https://frontstore.netlify.com target="_blank">Website</a>
+                                </li>
+                                <li>My Piano Web <a href=https://pianoweb.netlify.com target="_blank">Website</a></li>
+                                <li>Drums Keyboard Web <a href=https://keydrumsweb.netlify.com/
+                                        target="_blank">Website</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h2>Administrative Accounting Senior</h2>
+                        <h3>Estudio Moreno y Asociados</h3>
+                        <p>02-2015 - Today</p>
+                        <div class="lista-tareas">
+                            <ul>
+                                <li>Accountability Indexs <a href="https://github.com/pinomartin/indicesEECCapp"
+                                        target="_blank">App</a></li>
+                                <li>Excel Sheets Development</li>
+                                <li>Settle Taxes</li>
+                                <li>Accountancy</li>
+                                <li>Payroll Services</li>
+                                <li>Administrative Taks</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
         </div>
-    </footer>
-    <script src="/js/script.js"></script>
+        <!--FOOTER SECTION-->
+        <footer class="footer">
+            <h3>Follow me</h3>
+            <div class="iconos" id="iconos-contacto">
+                <a id="linkedin" href="https://www.linkedin.com/in/martinpino91/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a id="github" href="https://github.com/pinomartin" target="_blank"><i class="fab fa-github"></i></a>
+                <a id="cv" href="https://drive.google.com/file/d/1zjAWQwpfijKoT9tbVXRzxxKMCCJ6PzU7/view?usp=sharing"
+                    target="_blank"><i class="far fa-file-alt"></i></a>
+                <a id="whatsapp"
+                    href="https://api.whatsapp.com/send?phone=543517704193&text=Hola%20Mart%C3%ADn%20!%20Me%20interesa%20saber%20m%C3%A1s%20de%20ti"
+                    target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="espacio">
+
+            </div>
+        </footer>
+        <script src="/js/script.js"></script>
 </body>
 
 </html>

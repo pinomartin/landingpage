@@ -6,8 +6,10 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #000000;
+    background-image: linear-gradient(120deg, #2B3B5E,rgb(43, 34, 73));
+    scroll-behavior: smooth;
 }
+
 
 nav {
     /*para fijar el menu*/
@@ -44,12 +46,12 @@ nav a {
     left: 0;
     flex-direction: column;
     width: 100%;
-    transition: all 1s ease;
-    background: #000428;
+    transition: all 0.7s ease-in-out;
+    background: #8388b8;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: -webkit-linear-gradient(to top, #4B4E94, #2D6290);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to bottom, #3494CC,#242547 );
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -71,7 +73,7 @@ header {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: auto;
+    
     padding: 48px;
     width: 100%;
 }
@@ -79,6 +81,7 @@ header {
 .contenedor {
     width: 95%;
     max-width: 1200px;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     margin: auto;
@@ -96,6 +99,7 @@ img {
 
 .textos {
     width: 50%;
+    margin-top: 3rem;
     color: #ffffff;
 }
 
@@ -109,6 +113,12 @@ img {
     font-weight: 50;
     font-size: 45px;
     animation: moverDerecha 1s ease-in;
+}
+
+.textos h4{
+    line-height: 2rem;
+    font-weight: 400;
+    animation: moverIzquierda 1s ease-in;
 }
 
 .boton {
@@ -142,17 +152,31 @@ img {
     
 }
 
+.btn-home{
+    border-radius: 20rem ;
+    padding: 1rem 4rem;
+}
+
+.home{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+
 
 /*Efecto OLA curva*/
 
 .wave {
-    height: 100px;
+    
     width: 100%;
+    margin: 0;
     background: #0f0c29;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: -webkit-linear-gradient(to top, #797BED, #585AAD, #313261);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right,#84E6F0, #242547, #84E6F0);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -160,7 +184,13 @@ img {
 /*CONTENIDO SKILLS*/
 
 .contenedor-main {
-    margin: 70px 0;
+    margin: 7rem auto 7rem auto;
+    border-radius: 10px ;
+}
+.habilidades{
+    margin: 0 auto;
+    max-width: 75vw;
+    
 }
 
 .habilidades h1 {
@@ -170,22 +200,36 @@ img {
 }
 
 .contenedor-hablidades {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    grid-column-gap: 40px;
-    grid-row-gap: 60px;
+    align-items: center;
 }
 
 @media (min-width: 990px){
     .contenedor-hablidades {
-        grid-template-columns:  repeat(auto-fit, minmax(450px, 1fr));
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
     }
 }
 
 .skill {
     text-align: center;
     color: #ffffff;
+    background-color: #4B4E94;
+    padding: 2rem 0rem;
+    margin: 2rem;
+    border-radius: 10rem;
+    width: 11rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.61);
+    transition: all 0.2s ease-in-out;
+}
+
+.skill:hover{
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(52, 148, 204);
+-moz-box-shadow: 0px 0px 10px 0px rgb(72, 188, 255);
+box-shadow: 0px 0px 10px 0px rgb(72, 188, 255);
 }
 
 .skill.s-uno {
@@ -341,17 +385,16 @@ img {
 
 @media (min-width: 768px) {
     .iconos {
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
     }
     .footer h3 {
-        text-align: right;
-        padding-right: 20px;
+        text-align: center;
     }
 }
 
 .iconos a {
-    margin: 10px;
+    margin: 0 10px;
     padding: 5px;
     color: #ffffff;
     font-size: 35px;

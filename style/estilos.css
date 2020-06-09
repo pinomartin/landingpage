@@ -81,7 +81,7 @@ header {
 .contenedor {
     width: 95%;
     max-width: 1200px;
-    min-height: 85vh;
+    min-height: 65vh;
     display: flex;
     align-items: center;
     margin: auto;
@@ -161,7 +161,8 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 3rem;
+    height: 20vh;
+    margin-top: 3rem;
 }
 
 
@@ -189,7 +190,8 @@ img {
 }
 .habilidades{
     margin: 0 auto;
-    max-width: 75vw;
+    max-width: 70vw;
+    
     
 }
 
@@ -220,7 +222,7 @@ img {
     background-color: #4B4E94;
     padding: 2rem 0rem;
     margin: 2rem;
-    border-radius: 10rem;
+    border-radius: 11rem;
     width: 11rem;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.61);
     transition: all 0.2s ease-in-out;
@@ -228,8 +230,9 @@ img {
 
 .skill:hover{
     -webkit-box-shadow: 0px 0px 10px 0px rgb(52, 148, 204);
--moz-box-shadow: 0px 0px 10px 0px rgb(72, 188, 255);
-box-shadow: 0px 0px 10px 0px rgb(72, 188, 255);
+    -moz-box-shadow: 0px 0px 10px 0px rgb(72, 188, 255);
+    box-shadow: 0px 0px 10px 0px rgb(72, 188, 255);
+    transform: scale(1.05);
 }
 
 .skill.s-uno {
@@ -277,7 +280,7 @@ box-shadow: 0px 0px 10px 0px rgb(72, 188, 255);
 }
 
 #css3:hover {
-    color: #256ef5;
+    color: #4384fc;
 }
 
 #js:hover {
@@ -336,8 +339,46 @@ box-shadow: 0px 0px 10px 0px rgb(72, 188, 255);
 }
 
 .lista-tareas {
-    margin-top: 8px;
+    margin: 2rem;
 }
+
+.web{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+
+.web li a img{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid #06c5ff;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .web{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .web li{
+        flex-basis: 0 1 calc(30% - 1rem);
+        margin: 0 1rem;
+        
+    }
+
+    .web li a img{
+        max-width: 100%;
+        height: 90%;
+    }
+    
+}
+
+
+
+
 
 .lista-tareas a {
     text-decoration: none;

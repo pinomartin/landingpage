@@ -342,6 +342,10 @@ img {
     text-align: center;
 }
 
+.experience p {
+    margin-bottom: 2rem;
+}
+
 .lista-tareas {
     margin: 2rem;
 }
@@ -401,20 +405,23 @@ img {
 
 
 
+.lista-tareas-account ul li{
+    line-height: 2rem;
+}
 
 
-/* .lista-tareas a {
+ .lista-tareas-account a{
     text-decoration: none;
     font-size: 1em;
     color: #06c5ff;
     transition: all 0.5s ease-in-out;
 }
 
-.lista-tareas a:hover {
+.lista-tareas-account a:hover {
     color: blueviolet;
     font-size: 1.1em;
 }
-
+/*
 .lista-tareas ul li {
     text-align: center;
     list-style: none;

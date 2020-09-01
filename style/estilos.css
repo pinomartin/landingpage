@@ -239,9 +239,9 @@ img {
     transform: scale(1.05);
 }
 
-.skill.s-uno {
+/* .skill.s-uno {
     animation: showUp 3s ease-in-out;
-}
+} */
 
 .skill.s-uno ul, .skill.s-dos ul {
     margin-top: 10px;
@@ -249,7 +249,7 @@ img {
     font-weight: 150;
 }
 
-.skill.s-dos {
+/* .skill.s-dos {
     animation: showUp 4s ease-in-out;
 }
 
@@ -260,7 +260,7 @@ img {
     .skill.s-dos {
         animation: showUp 5.5s ease-in-out;
     }
-}
+} */
 
 .skill h2 {
     margin-bottom: 20px;
@@ -367,7 +367,7 @@ img {
     transition: all 0.2s ease-in-out;
     padding-bottom: 1.5rem;
     background-color: #0f0c2981;
-    animation: showUp 4s ease-in-out;
+    /* animation: showUp 4s ease-in-out; */
 }
 
 .web li:hover{

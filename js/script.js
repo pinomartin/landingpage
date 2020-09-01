@@ -11,6 +11,37 @@ btnSkills.addEventListener("click", accionOpcionesMenu );
 btnXP.addEventListener("click", accionOpcionesMenu );
 btnContacto.addEventListener("click", accionOpcionesMenu );
 
+//Scroll Reveal 
+sr = new ScrollReveal();
+
+
+console.log(sr)
+sr.reveal('.headline', {delay: 300})
+sr.reveal('.left', {distance: '100%', opacity: 1, origin: 'left'})
+sr.reveal('.right', {distance: '100%', opacity: 1, origin: 'right', desktop: false, mobile: true})
+
+const options = {
+    delay: 0 , //ms
+    distance: '', // ('px','rem','%')
+    duration: 0, //ms
+    easing: '', // ('ease','ease-in','step-start','ease-in-out')
+    interval: 0, //ms (600=60fps)
+    opacity: 0, // (0 to 1)
+    origin: '', //('top','left','right','bottom')
+    rotate: {
+        x: 0,
+        y: 0,
+        z: 0
+    },          //(xe. 20)
+    scale: 0, // (0 to 1)
+    desktop: true, 
+    mobile: true 
+}
+
+
+
+
+
 
 
 
